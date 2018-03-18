@@ -56,7 +56,7 @@ Bmat=Bmat/12.0d0
     Smat(i+1,i)=1.0d0
   end do
   Smat=Cse*Smat/dx2
-  Hmat=matmul(Bmat, Hmat)
+  Hmat=matmul(Bmat, Smat)
   Hmat=Smat+Umat
   
 !===========================================================
